@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  develop:
+    image: hoppingganon/gorioshi-air
+    volumes:
+      - ./src:/root/src/go
+    ports:
+      - 8080:8080
+    environment:
+      # AIR または GORIOSHIを指定する
+      DEVELOP_BUILD: "GORIOSHI"
